@@ -1,0 +1,26 @@
+phidget-servo-driver
+====================
+
+This is just a quick wrap up for driving a phidget servo. This code comes from a number of places 
+and there are varied licenses on all of it. It is just collected here for simplicity.
+
+I claim no license. Anything I have added is public domain.
+
+The main servo.c code came from here http://www.phidgets.com/phorum/viewtopic.php?f=2&t=2093&start=15
+where Mike_S is a serious all-star.
+
+You may need to change the hardcoded product id (0x39) to match your phidget:
+
+1) unplug the usb cable
+2) reboot your router
+3) dmesg -c
+4) plug in the usb servo
+5) dmesg
+
+This should give you the info you need. If nothing shows up then the Servo is not being picked up and you have a different problem. I toyed around some and made a quick video... your code is awesome :)
+
+Here is a video showing what you can do once you have this working:
+
+http://www.vimeo.com/8460198
+
+Thanks again..
